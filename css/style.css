@@ -1,4 +1,7 @@
 
+html {
+  overflow-x: hidden;
+}
 
 body {
 	background-color: #212121; 
@@ -50,25 +53,24 @@ h3 {
 
 #masthead {
 	background: #212121;
-	margin: 0 0 30px;
+	margin: 0 0 25px;
 	z-index: 99;
 	color: #393e93;
 	overflow: auto;
 	border-bottom: 2px solid white;
 	position: fixed;
     width: 100%;
-    height: auto;
     max-width: 1920px;
 }
 #logo {
 	width: 200px;
 	height: 140px;
 	background: red;
-	float: left;
+	float: top;
 	line-height: 10px;
 	font-family: 'Caveat Brush', cursive;
 	text-align: center;
-	line-height: 70px;
+	line-height: 50px;
 	color: white;
 	font-weight: 700;
 	font-size: 30px;
@@ -88,12 +90,36 @@ nav a {
 	display: inline-block;
 	border-left: 1px solid red;
 	padding-left: 15px;
-	line-height: 18px;
+	line-height: 10px;
 }
 nav a:first-child {
 	border-left: 0 none;
 }
 
+ .navbar {
+  max-height:10px;
+}
+
+.navbar-brand {
+  padding: 0 15px;
+  height: 80px;
+  line-height: 80px;
+}
+
+.navbar-toggle {
+  /* (80px - button height 34px) / 2 = 23px */
+  margin-top: 23px;
+  padding: 9px 10px !important;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    /* (80px - line-height of 27px) / 2 = 26.5px */
+    padding-top: 26.5px;
+    padding-bottom: 26.5px;
+    line-height: 27px;
+  }
+}
 
 footer {
 	background: #212121;
