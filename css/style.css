@@ -18,12 +18,14 @@ body {
 	max-width: 960px;
 	margin: 0 auto;
 	clear: both;
-}ß
+}
+
 h1, 
 h2,
 h3,
 p {
 	margin-bottom: 10px;
+	line-height: 10px;
 }
 
 
@@ -330,6 +332,10 @@ a{
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
 }
 
 /* Hide the images by default */
